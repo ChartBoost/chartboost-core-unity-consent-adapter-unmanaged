@@ -1,0 +1,23 @@
+{
+    "name": "Chartboost.Core.Consent.Unmanaged.IOS",
+    "rootNamespace": "Chartboost.Core.Unmanaged.iOS",
+    "references": [
+        "Chartboost.Core.Consent.Unmanaged",
+        "Chartboost.Core.IOS",
+        "Chartboost.Core",
+        "Chartboost.Utilities.IOS",
+        "Chartboost.Utilities"
+    ],
+    "includePlatforms": [
+        "Editor",
+        "iOS"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

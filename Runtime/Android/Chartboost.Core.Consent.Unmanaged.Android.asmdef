@@ -1,0 +1,24 @@
+{
+    "name": "Chartboost.Core.Consent.Unmanaged.Android",
+    "rootNamespace": "Chartboost.Core.Unmanaged.Android",
+    "references": [
+        "Chartboost.Core.Consent.Unmanaged",
+        "Chartboost.Core.Android",
+        "Chartboost.Core",
+        "Chartboost.Utilities.Android",
+        "Chartboost.Logging",
+        "Chartboost.Utilities"
+    ],
+    "includePlatforms": [
+        "Android",
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
