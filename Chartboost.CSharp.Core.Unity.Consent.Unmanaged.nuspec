@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>Chartboost.CSharp.Core.Unity.Consent.Unmanaged</id>
+    <version>1.0.0</version>
+    <title>Chartboost Core - Consent Unmanaged</title>
+    <description>Unmanaged CMP adapter for mediating through Chartboost Core.</description>
+    <authors>Chartboost</authors>
+    <owners>Chartboost</owners>
+    <license type="file">LICENSE.md</license>
+    <readme>README.md</readme>
+    <projectUrl>https://www.chartboost.com</projectUrl>
+    <copyright>Copyright 2024</copyright>
+    <tags>Chartboost, Consent, Core, Adapter, Unity, cs</tags>
+    <repository type="git" url="https://github.com/ChartBoost/chartboost-core-unity-consent-adapter-unmanaged"/>
+    <dependencies>
+      <dependency id="Chartboost.CSharp.Core.Unity" version="1.0.2" />
+      <dependency id="Chartboost.CSharp.Utilities.Unity" version="1.0.2" />
+      <dependency id="Chartboost.CSharp.Logging.Unity" version="1.1.0" />
+    </dependencies>
+  </metadata>
+</package>

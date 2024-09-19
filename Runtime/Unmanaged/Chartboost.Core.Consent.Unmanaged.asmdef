@@ -1,0 +1,17 @@
+{
+    "name": "Chartboost.Core.Consent.Unmanaged",
+    "rootNamespace": "Chartboost.Core.Unmanaged",
+    "references": [
+        "Chartboost.Core",
+        "Chartboost.Logging"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

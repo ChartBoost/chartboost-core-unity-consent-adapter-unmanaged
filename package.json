@@ -1,0 +1,20 @@
+{
+  "name": "com.chartboost.core.consent.unmanaged",
+  "displayName": "Chartboost Core - Consent Unmanaged",
+  "version": "1.0.0",
+  "unity": "2022.3",
+  "dependencies": {
+    "com.chartboost.core": "1.0.2",
+    "com.chartboost.unity.utilities": "1.0.2",
+    "com.chartboost.unity.logging": "1.1.0"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "author": {
+    "name": "Chartboost",
+    "email": "",
+    "url": "https://chartboost.com"
+  },
+  "homepage": "https://chartboost.com",
+  "description": "Unmanaged CMP adapter for mediating through Chartboost Core."
+}

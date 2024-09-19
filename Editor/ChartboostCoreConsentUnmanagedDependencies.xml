@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencies>
+    <androidPackages>
+        <!-- Usercentrics Dependency -->
+        <androidPackage spec="com.chartboost:chartboost-core-consent-adapter-unmanaged:1.1.0.+"/>
+    </androidPackages>
+    <iosPods>
+        <!-- Usercentrics Podspec -->
+        <iosPod name="ChartboostCoreConsentAdapterUnmanaged" version="~> 1.1.0.0" addToAllTargets="true"/>
+    </iosPods>
+</dependencies>
