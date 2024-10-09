@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Chartboost.CSharp.Core.Unity.Consent.Unmanaged</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>Chartboost Core - Consent Unmanaged</title>
     <description>Unmanaged CMP adapter for mediating through Chartboost Core.</description>
     <authors>Chartboost</authors>

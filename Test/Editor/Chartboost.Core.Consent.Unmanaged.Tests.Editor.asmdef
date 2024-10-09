@@ -1,0 +1,22 @@
+{
+    "name": "Chartboost.Core.Consent.Unmanaged.Tests.Editor",
+    "rootNamespace": "Chartboost.Core.Consent.Unmanaged.Tests.Editor",
+    "references": [
+        "UnityEditor.TestRunner",
+        "Chartboost.Utilities.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll",
+        "Newtonsoft.Json.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
