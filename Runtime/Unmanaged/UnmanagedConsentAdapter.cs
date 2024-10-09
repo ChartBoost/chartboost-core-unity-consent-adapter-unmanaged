@@ -10,7 +10,8 @@ namespace Chartboost.Core.Unmanaged
     /// </summary>
     public class UnmanagedConsentAdapter : NativeModuleWrapper<UnmanagedConsentAdapter>, IUnmanagedConsentAdapter
     {
-        private IUnmanagedConsentAdapter UnmanagedInstance
+        #nullable enable
+        private IUnmanagedConsentAdapter? UnmanagedInstance
         {
             get
             {
@@ -18,18 +19,35 @@ namespace Chartboost.Core.Unmanaged
                 return adapter;
             }
         }
+        #nullable disable
         
         protected override string DefaultModuleId => "unmanaged_consent_adapter";
-        protected override string DefaultModuleVersion => "1.0.0";
+        protected override string DefaultModuleVersion => "1.0.1";
 
+        /// <summary>
+        /// Holds value in case no instance is found.
+        /// </summary>
+        private bool _shouldCollectConsent;
+        
         /// <summary>
         ///  Indicates whether the CMP has determined that consent should be collected from the user.
         /// </summary>
         public bool ShouldCollectConsent
         {
-            get => UnmanagedInstance.ShouldCollectConsent;
-            set => UnmanagedInstance.ShouldCollectConsent = value;
+            get => UnmanagedInstance?.ShouldCollectConsent ?? _shouldCollectConsent;
+            set
+            {
+                if (UnmanagedInstance == null)
+                    _shouldCollectConsent = value;
+                else
+                    UnmanagedInstance.ShouldCollectConsent = value;
+            }
         }
+
+        /// <summary>
+        /// Holds value in case no instance is found.
+        /// </summary>
+        private IReadOnlyDictionary<ConsentKey, ConsentValue> _consents = new Dictionary<ConsentKey, ConsentValue>();
 
         /// <summary>
         /// <para>
@@ -54,8 +72,14 @@ namespace Chartboost.Core.Unmanaged
         /// </summary>
         public IReadOnlyDictionary<ConsentKey, ConsentValue> Consents
         {
-            get => UnmanagedInstance.Consents;
-            set => UnmanagedInstance.Consents = value;
+            get => UnmanagedInstance?.Consents ?? _consents;
+            set
+            {
+                if (UnmanagedInstance == null)
+                    _consents = value;
+                else
+                    UnmanagedInstance.Consents = value;
+            }
         }
 
         // ReSharper disable once InconsistentNaming

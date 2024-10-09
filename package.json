@@ -1,7 +1,7 @@
 {
   "name": "com.chartboost.core.consent.unmanaged",
   "displayName": "Chartboost Core - Consent Unmanaged",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "unity": "2022.3",
   "dependencies": {
     "com.chartboost.core": "1.0.2",

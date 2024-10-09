@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file using the st
 Note the first digit of every adapter version corresponds to the major version of the Chartboost Core SDK compatible with that adapter. 
 Adapters are compatible with any Chartboost Core SDK version within that major version.
 
+### Version 1.0.1 *(2024-10-08)*
+
+Bug Fixes:
+- Fixed an issue where attempting to use the `UnmanagedConsentAdapter` in the Unity Editor would result in `NullReferenceExceptions`.
+
 ### Version 1.0.0 *(2024-09-19)*
 First version of the Core Consent Unmanaged Adapter.
 
